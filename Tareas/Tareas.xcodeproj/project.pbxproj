@@ -13,7 +13,6 @@
 		0038468B226035BE00723F7C /* Tareas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00384689226035BE00723F7C /* Tareas.xcdatamodeld */; };
 		0038468D226035BF00723F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0038468C226035BF00723F7C /* Assets.xcassets */; };
 		00384690226035BF00723F7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0038468E226035BF00723F7C /* LaunchScreen.storyboard */; };
-		003846982260390200723F7C /* Tarea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003846972260390200723F7C /* Tarea.swift */; };
 		0038469A22604B4500723F7C /* CrearTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038469922604B4400723F7C /* CrearTareaViewController.swift */; };
 		007B41BB2260C9FF0057E0E0 /* TareaCompletadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B41BA2260C9FF0057E0E0 /* TareaCompletadaViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		0038468C226035BF00723F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0038468F226035BF00723F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00384691226035BF00723F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		003846972260390200723F7C /* Tarea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea.swift; sourceTree = "<group>"; };
 		0038469922604B4400723F7C /* CrearTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearTareaViewController.swift; sourceTree = "<group>"; };
 		007B41BA2260C9FF0057E0E0 /* TareaCompletadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCompletadaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 				00384684226035BE00723F7C /* ViewController.swift */,
 				00384686226035BE00723F7C /* Main.storyboard */,
 				0038469922604B4400723F7C /* CrearTareaViewController.swift */,
-				003846972260390200723F7C /* Tarea.swift */,
 				0038468C226035BF00723F7C /* Assets.xcassets */,
 				0038468E226035BF00723F7C /* LaunchScreen.storyboard */,
 				00384691226035BF00723F7C /* Info.plist */,
@@ -152,7 +149,6 @@
 				0038468B226035BE00723F7C /* Tareas.xcdatamodeld in Sources */,
 				00384683226035BE00723F7C /* AppDelegate.swift in Sources */,
 				007B41BB2260C9FF0057E0E0 /* TareaCompletadaViewController.swift in Sources */,
-				003846982260390200723F7C /* Tarea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
