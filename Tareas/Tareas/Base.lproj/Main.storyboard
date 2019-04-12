@@ -37,7 +37,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="JjV-SD-dDr" id="1l9-6j-xFN"/>
-                        <segue destination="bG2-ii-cuh" kind="show" identifier="agregarTarea" id="oit-CG-GrX"/>
+                        <segue destination="bG2-ii-cuh" kind="show" identifier="agregarSegue" id="oit-CG-GrX"/>
+                        <segue destination="SAc-iO-vmm" kind="show" identifier="tareaSeleccionadaSegue" id="NRU-PX-6yg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -47,7 +48,6 @@
         <!--Crear Tarea View Controller-->
         <scene sceneID="EK0-uv-Jar">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pUc-Ys-4e8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="bG2-ii-cuh" customClass="CrearTareaViewController" customModule="Tareas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r0T-Mc-c7z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -104,8 +104,48 @@
                         <outlet property="txtNombreTarea" destination="dYg-Vn-6Kk" id="246-vH-27f"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUc-Ys-4e8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1539" y="120"/>
+        </scene>
+        <!--Tarea Completada View Controller-->
+        <scene sceneID="Vh6-Ta-BiM">
+            <objects>
+                <viewController id="SAc-iO-vmm" customClass="TareaCompletadaViewController" customModule="Tareas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DCN-Vi-cAD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6z-tt-uEo">
+                                <rect key="frame" x="177.5" y="108" width="59.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E92-jZ-Qcr">
+                                <rect key="frame" x="162.5" y="158" width="89" height="30"/>
+                                <state key="normal" title="Completado!"/>
+                                <connections>
+                                    <action selector="completarTarea:" destination="SAc-iO-vmm" eventType="touchUpInside" id="ioU-EG-nqf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E92-jZ-Qcr" firstAttribute="centerX" secondItem="DCN-Vi-cAD" secondAttribute="centerX" id="EKG-F8-Sjq"/>
+                            <constraint firstItem="l6z-tt-uEo" firstAttribute="centerX" secondItem="DCN-Vi-cAD" secondAttribute="centerX" id="NQD-2p-dDe"/>
+                            <constraint firstItem="l6z-tt-uEo" firstAttribute="top" secondItem="fyX-LX-Hug" secondAttribute="top" constant="20" id="OwP-Eq-OD1"/>
+                            <constraint firstItem="E92-jZ-Qcr" firstAttribute="top" secondItem="l6z-tt-uEo" secondAttribute="bottom" constant="20" id="hT0-SY-suA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fyX-LX-Hug"/>
+                    </view>
+                    <connections>
+                        <outlet property="tareaLabel" destination="l6z-tt-uEo" id="7SP-ES-4Tg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uuj-a4-cwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="120"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="llo-jI-tTT">

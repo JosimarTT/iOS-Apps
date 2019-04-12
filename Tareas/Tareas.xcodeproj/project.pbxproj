@@ -15,6 +15,7 @@
 		00384690226035BF00723F7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0038468E226035BF00723F7C /* LaunchScreen.storyboard */; };
 		003846982260390200723F7C /* Tarea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003846972260390200723F7C /* Tarea.swift */; };
 		0038469A22604B4500723F7C /* CrearTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038469922604B4400723F7C /* CrearTareaViewController.swift */; };
+		007B41BB2260C9FF0057E0E0 /* TareaCompletadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B41BA2260C9FF0057E0E0 /* TareaCompletadaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		00384691226035BF00723F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003846972260390200723F7C /* Tarea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea.swift; sourceTree = "<group>"; };
 		0038469922604B4400723F7C /* CrearTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearTareaViewController.swift; sourceTree = "<group>"; };
+		007B41BA2260C9FF0057E0E0 /* TareaCompletadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareaCompletadaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				0038468E226035BF00723F7C /* LaunchScreen.storyboard */,
 				00384691226035BF00723F7C /* Info.plist */,
 				00384689226035BE00723F7C /* Tareas.xcdatamodeld */,
+				007B41BA2260C9FF0057E0E0 /* TareaCompletadaViewController.swift */,
 			);
 			path = Tareas;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				00384685226035BE00723F7C /* ViewController.swift in Sources */,
 				0038468B226035BE00723F7C /* Tareas.xcdatamodeld in Sources */,
 				00384683226035BE00723F7C /* AppDelegate.swift in Sources */,
+				007B41BB2260C9FF0057E0E0 /* TareaCompletadaViewController.swift in Sources */,
 				003846982260390200723F7C /* Tarea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
