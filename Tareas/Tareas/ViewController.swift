@@ -82,11 +82,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if segue.identifier == "agregarSegue" {
 //            let siguienteVC = segue.destination as! CrearTareaViewController
-//            siguienteVC.anteriorVC = self
+//            siguienteVC.anteriorVC = self	
 //        }
         if segue.identifier == "tareaSeleccionadaSegue" {
             let siguienteVC = segue.destination as! TareaCompletadaViewController
-            siguienteVC.tarea = sender as! Tarea
+            siguienteVC.tarea = sender as? Tarea
 //            siguienteVC.anteriorVC = self
         }
     }
